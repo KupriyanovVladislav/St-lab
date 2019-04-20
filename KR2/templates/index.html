@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %} Главная страница {% endblock %}
+{% block content %}
+
+<h2>Студенты</h2>
+
+<form class="col s4" action="students/add/">
+    <button class="btn-small">Добавить студента</button>
+</form>
+
+<table>
+    <thead>
+        <th>Фамилия</th><th>Имя</th>
+    </thead>
+    <tbody>
+    {% for student in students %}
+        <tr>
+            <td><a href="students/{{ student.id }}/">{{ student.surname }}</a></td>
+            <td>{{ student.name }}</td>
+            <td>
+                <form action="students/{{ student.id }}/update/">
+                    <button class="btn-small indigo lighten-1">Редактировать</button>
+                </form>
+            </td>
+                <td>
+                    <form action="students/{{ student.id }}/delete/">
+                        <button class="btn-small indigo lighten-1">Удалить</button>
+                    </form>
+                </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<br>
+
+<h2>Преподаватели</h2>
+
+<form class="col s4" action="teachers/add/">
+    <button class="btn-small">Добавить преподавателя</button>
+</form>
+
+<table>
+    <thead>
+        <th>Фамилия</th><th>Имя</th>
+    </thead>
+    <tbody>
+    {% for teacher in teachers %}
+        <tr>
+            <td><a href="teachers/{{ teacher.id }}/">{{ teacher.surname }}</a></td>
+            <td>{{ teacher.name }}</td>
+            <td>
+                <form action="teachers/{{ teacher.id }}/update/">
+                    <button class="btn-small indigo lighten-1">Редактировать</button>
+                </form>
+            </td>
+             <td>
+                 <form action="teachers/{{ teacher.id }}/delete/">
+                     <button class="btn-small indigo lighten-1">Удалить</button>
+                 </form>
+             </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
