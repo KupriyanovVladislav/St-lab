@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <style>
+        body,html {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #1D1B26;
+        }
+        main{
+            margin: 50px;
+            max-width: 600px;
+            background: #fff;
+            align-self: center;
+            text-align: center;
+            border-radius: 15%;
+        }
+        button {
+            margin:20px;
+            position: relative;
+            background-color: #f39c12;
+            border: none;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+}
+
+button:hover{
+   background:rgba(157, 158, 233, 0.466);
+   box-shadow:0px 2px 5px 3px #97B1BF;
+   color:#000;
+}
+input {
+    display: block;
+  padding: 0.5em 0.25em;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  text-align: center;
+  box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.2);
+}
+    </style>
+</head>
+<body>
+<main>
+<h1>Chat</h1>
+<div id="online"></div>
+
+<div style="float: left">
+    <div id="messages">
+    </div>
+
+
+    <form onsubmit="send_message(); return false;">
+        <input type="text" id="message" name="message">
+        <div class="button-container">
+        <button type="submit" value="Отправить">Отправить</button>
+    </div>
+    </form>
+</div>
+
+</main>
+<script>
+    let ws = new WebSocket("ws://" + window.location.host + window.location.pathname + 'ws');
+    ws.onmessage = function (event) {
+        if (event.data == "disconnect") {
+            document.getElementsByTagName("title")[0].innerHTML = "DISCONNECT";
+            alert("Room is restarting");
+            window.location.href = '/';
+        }
+        else if (event.data.startsWith('Online:'))
+            document.getElementById("online").innerHTML = event.data;
+        else
+            document.getElementById("messages").innerHTML = event.data;
+    };
+
+    function send_message() {
+        if (document.getElementById("message").value.length == 0) {
+            alert("Please, enter your message.");
+            return;
+        }
+        ws.send(
+            "message=" + document.getElementById("message").value
+        );
+        document.getElementById('message').value = '';
+    }
+</script>
+
+</body>
+</html>
