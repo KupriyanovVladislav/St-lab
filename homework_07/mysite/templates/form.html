@@ -1,0 +1,6 @@
+{% load material_form %}
+
+<form method="post">{% csrf_token %}
+    {% form form=form %}{% endform %}
+    {{ button_label }}
+</form>

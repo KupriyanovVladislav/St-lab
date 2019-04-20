@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Фильтр товаров {% endblock %}
+
+{% block content %}
+
+<ul>
+    {% for item in object_list %}
+        <li>{{ item.name }} - {{ item.department }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
