@@ -1,0 +1,42 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+body p{
+    margin: 0;
+}
+
+.header, .footer {
+    height: 10%;
+}
+
+.header {
+    text-align: center;
+    background: grey;
+}
+
+.footer {
+    background: green;
+}
+
+.menu-left, .menu-right {
+    width: 20%;
+    background: orange;
+}
+
+.container {
+    min-height: 80%;
+    display: flex;
+}
+
+.main {
+    background: blue;
+    flex-grow: 1;
+}
