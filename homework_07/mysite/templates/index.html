@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %} Главная страница {% endblock %}
+
+{% block content %}
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="shop_id">Выберите магазин:</label>
+    <div class="row">
+     <div class="input-field col s4">
+        <select id="shop_id" name="shop">
+        {% for shop in shops %}
+            <option value = {{ shop.id }}> {{ shop.name }} </option>
+        {% endfor %}
+        </select>
+     </div>
+    </div>
+        <button class="btn waves-effect waves-light" type="submit">Открыть</button>
+    </form>
+
+{% endblock %}

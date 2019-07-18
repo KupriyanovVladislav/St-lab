@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    {% include 'material/includes/material_css.html' %}
+    {% include 'material/includes/material_js.html' %}
+
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+
+    <ul id="dropdown1" class="dropdown-content" >
+            <li><a href="http://127.0.0.1:8000/filter/shop/1/">Фильтр магазинов</a></li>
+            <li><a href="http://127.0.0.1:8000/filter/item/1/">Фильтр товаров</a></li>
+    </ul>
+
+    <nav>
+    <div class="nav-wrapper teal darken-1">
+      <a href="http://127.0.0.1:8000/" class="brand-logo">Onliner</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="http://127.0.0.1:8000/compare/departments/">Сравнение департаментов</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-activates="dropdown1">Фильтры</a></li>
+        <li><strong>Товаров в наличии: {{ ITEMS_AMOUNT }}</strong></li>
+      </ul>
+    </div>
+  </nav>
+
+</head>
+
+<body>
+{% block content %}{% endblock %}
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('select').material_select();
+    });
+</script>
+
+<script>
+    $(".dropdown-trigger").dropdown();
+</script>

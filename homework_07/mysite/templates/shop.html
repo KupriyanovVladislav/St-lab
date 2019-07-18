@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load url %}
+{% block title %} {{ shop.name}} {% endblock %}
+
+{% block content %}
+
+<h1>
+    <a href="infoShop/">{{ shop }}</a>
+    <a href="addDepartment"class="btn-floating btn-large waves-effect waves-light">
+        <i class="material-icons">add</i>Добавить отдел</a>
+</h1>
+
+<br>
+
+{% for department in shop.departments.all %}
+    <div class="row">
+        <form class="col s2" action="{{ department.id }}/updateDepartment">
+            <button class="btn-small">Редактировать</button>
+        </form>
+
+        <form class="col s2" action="{{ department.id }}/deleteDepartment">
+            <button class="btn-small">Удалить</button>
+        </form>
+    </div>
+
+    <table>
+        <tr>
+            <th name="department" value={{ department.id }} colspan="7">
+                {{ department.sphere }}
+                <a href="{{ department.id }}/addItem">Добавить товар</a>
+            </th>
+        </tr>
+        <tr>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Цена</th>
+            <th>Продано</th>
+            <th>Комментарии</th>
+            <th colspan="2">Действия</th>
+        </tr>
+        <tbody>
+                {% for item in department.items.all %}
+                    {% if item.is_sold %}
+                        <tr bgcolor="#80cbc4">
+                    {% else %}
+                        <tr>
+                    {% endif %}
+                        <td>{{ item|url }}</td>
+                        <td>{{ item.description }}</td>
+                    {% if item.price < 1 %}
+                        <td>0</td>
+                    {% else %}
+                        <td>{{ item.price|floatformat:1 }}</td>
+                    {% endif %}
+                        <td>{{ item.is_sold }}</td>
+                        <td>
+                            {% for com in item.comments %}
+                            {{ com }} <br>
+                            {% endfor %}
+                        </td>
+                        <td>
+                            <form action="{{ department.id }}/{{ item.id }}/updateItem">
+                                <button class="btn-small indigo lighten-1">Редактировать</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="{{ department.id }}/{{ item.id }}/deleteItem">
+                                <button class="btn-small indigo lighten-1">Удалить</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+
+    <br>
+    {% endfor %}
+
+{% endblock %}

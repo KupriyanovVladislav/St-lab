@@ -1,0 +1,229 @@
+[
+  {
+    "model": "main.Shop",
+    "pk": 1,
+    "fields": {
+      "name": "Евроопт",
+      "address": "Минск, Нестерова, 58",
+      "staff_amount": 60
+    }
+  },
+  {
+    "model": "main.Shop",
+    "pk": 2,
+      "fields": {
+      "name": "Корона",
+      "address": "Минск, просп. Независимости, 51",
+      "staff_amount": 55
+    }
+  },
+  {
+    "model": "main.Shop",
+    "pk": 3,
+    "fields": {
+      "name": "Рублёвский",
+      "address": "Минск, Никифорова, 51",
+      "staff_amount": 30
+    }
+  },
+
+  {
+    "model": "main.Department",
+    "pk": 1,
+    "fields": {
+      "sphere": "Алкоголь",
+      "staff_amount": 3,
+      "shop_id": 1
+    }
+  },
+  {
+    "model": "main.Department",
+    "pk": 2,
+    "fields": {
+      "sphere": "Фрукты",
+      "staff_amount": 2,
+      "shop_id": 1
+    }
+  },
+  {
+    "model": "main.Department",
+    "pk": 3,
+    "fields": {
+      "sphere": "Бытовая химия",
+      "staff_amount": 3,
+      "shop_id": 2
+    }
+  },
+  {
+    "model": "main.Department",
+    "pk": 4,
+    "fields": {
+      "sphere": "Молочный",
+      "staff_amount": 4,
+      "shop_id": 2
+    }
+  },
+  {
+    "model": "main.Department",
+    "pk": 5,
+    "fields": {
+      "sphere": "Хлебо-булочный",
+      "staff_amount": 3,
+      "shop_id": 3
+    }
+  },
+  {
+    "model": "main.Department",
+    "pk": 6,
+    "fields": {
+      "sphere": "Алкоголь",
+      "staff_amount": 4,
+      "shop_id": 3
+    }
+  },
+
+  {
+    "model": "main.Item",
+    "pk": 1,
+    "fields": {
+      "name": "Пиво \"Аливария золотое\"",
+      "description": "",
+      "price": 1,
+      "is_sold": false,
+      "comments": ["3/5"],
+      "department_id": 1
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 2,
+    "fields": {
+      "name": "Водка \"Бульбаш\"",
+      "description": "Содержание спирта - 40%",
+      "price": 13,
+      "is_sold": false,
+      "comments": ["3/5"],
+      "department_id": 1
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 3,
+    "fields": {
+      "name": "Виски \"Grants\"",
+      "description": "Страна-производитель - Ирландия",
+      "price": 23,
+      "is_sold": false,
+      "comments": ["2/5"],
+      "department_id": 1
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 4,
+    "fields": {
+      "name": "Мыло \"Детское\"",
+      "description": "Для младенцев",
+      "price": 2,
+      "is_sold": false,
+      "comments": [],
+      "department_id": 3
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 5,
+    "fields": {
+      "name": "Салфетки влажные",
+      "description": "",
+      "price": 1,
+      "is_sold": false,
+      "comments": [],
+      "department_id": 3
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 6,
+    "fields": {
+      "name": "Шампунь \"Shampoo\"",
+      "description": "",
+      "price": 3,
+      "is_sold": true,
+      "comments": ["Хороший шампунь"],
+      "department_id": 3
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 7,
+    "fields": {
+      "name": "Молоко \"Савушкин\"",
+      "description": "",
+      "price": 1,
+      "is_sold": false,
+      "comments": ["Отличное молоко", "Сделано с любовью"],
+      "department_id": 4
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 8,
+    "fields": {
+      "name": "Сырная лепёшка",
+      "description": "Масса - 300 гр",
+      "price": 2,
+      "is_sold": false,
+      "comments": [],
+      "department_id": 5
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 9,
+    "fields": {
+      "name": "Батон \"Березинский\"",
+      "description": "",
+      "price": 1,
+      "is_sold": true,
+      "comments": ["Всегда свежий", "Сладкий", "Вкусный"],
+      "department_id": 5
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 10,
+    "fields": {
+      "name": "Хлеб \"Оршанский\"",
+      "description": "Срок годности - 3 дня",
+      "price": 1,
+      "is_sold": true,
+      "comments": [],
+      "department_id": 5
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 11,
+    "fields": {
+      "name": "Пиво \"Zatecky gus\"",
+      "description": "Содержание спирта - 4.6 %",
+      "price": 2,
+      "is_sold": false,
+      "comments": ["Приятное на вкус"],
+      "department_id": 6
+    }
+  },
+  {
+    "model": "main.Item",
+    "pk": 12,
+    "fields": {
+      "name": "Пиво \"Heinkein\"",
+      "description": "",
+      "price": 2,
+      "is_sold": true,
+      "comments": ["Терпкий вкус"],
+      "department_id": 6
+    }
+  }
+]

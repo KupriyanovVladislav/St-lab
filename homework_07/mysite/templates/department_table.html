@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load department_leader %}
+
+{% block title %} Сравнительнеая таблица {% endblock %}
+
+{% block content %}
+
+<table border="1" width="600">
+    <thead>
+    <th>Критерий</th>
+    <th>{{ main|upper }}</th>
+    <th>{{ secondary|upper }}</th>
+    <th>Лидер</th>
+    </thead>
+    <tbody>
+    {% for desc, val1, val2 in lst %}
+        <tr>
+            {% department_leader main secondary desc as leader %}
+            <td>{{ desc }}</td>
+            {% if leader == main %}
+                <td bgcolor="#84ffff">{{ val1 }}</td>
+                <td>{{ val2 }}</td>
+            {% else %}
+                <td>{{ val1 }}</td>
+                <td bgcolor="#84ffff">{{ val2 }}</td>
+            {% endif %}
+        <td>{% department_leader main secondary desc %}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

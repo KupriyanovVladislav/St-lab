@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ object.name }} {% endblock %}
+
+{% block content %}
+
+<table border="1" width="300">
+    <col style="background-color: bisque">
+    <tbody>
+    <tr>
+        <th>Название</th><td>{{ object.name }}</td>
+    </tr>
+    <tr>
+        <th>Адресс</th><td>{{ object.address }}</td>
+    </tr>
+    <tr>
+        <th>Персонал</th><td>{{ object.staff_amount }}</td></tr>
+    </tbody>
+</table>
+
+<div class="row">
+    <form class="col s1.2" action="updateShop/">
+        <button class="btn-small">Редактировать</button>
+    </form>
+
+    <form action="deleteShop/">
+        <button class="btn-small">Удалить</button>
+    </form>
+</div>
+
+{% endblock %}
