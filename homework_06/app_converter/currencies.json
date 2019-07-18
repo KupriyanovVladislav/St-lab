@@ -1,0 +1,210 @@
+[
+    {
+        "Cur_ID": 170,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "AUD",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0410\u0432\u0441\u0442\u0440\u0430\u043b\u0438\u0439\u0441\u043a\u0438\u0439 \u0434\u043e\u043b\u043b\u0430\u0440",
+        "Cur_OfficialRate": 1.5132
+    },
+    {
+        "Cur_ID": 191,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "BGN",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0411\u043e\u043b\u0433\u0430\u0440\u0441\u043a\u0438\u0439 \u043b\u0435\u0432",
+        "Cur_OfficialRate": 1.2325
+    },
+    {
+        "Cur_ID": 290,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "UAH",
+        "Cur_Scale": 100,
+        "Cur_Name": "\u0413\u0440\u0438\u0432\u0435\u043d",
+        "Cur_OfficialRate": 8.1087
+    },
+    {
+        "Cur_ID": 291,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "DKK",
+        "Cur_Scale": 10,
+        "Cur_Name": "\u0414\u0430\u0442\u0441\u043a\u0438\u0445 \u043a\u0440\u043e\u043d",
+        "Cur_OfficialRate": 3.2309
+    },
+    {
+        "Cur_ID": 145,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "USD",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0414\u043e\u043b\u043b\u0430\u0440 \u0421\u0428\u0410",
+        "Cur_OfficialRate": 2.1381
+    },
+    {
+        "Cur_ID": 292,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "EUR",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0415\u0432\u0440\u043e",
+        "Cur_OfficialRate": 2.4086
+    },
+    {
+        "Cur_ID": 293,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "PLN",
+        "Cur_Scale": 10,
+        "Cur_Name": "\u0417\u043b\u043e\u0442\u044b\u0445",
+        "Cur_OfficialRate": 5.609
+    },
+    {
+        "Cur_ID": 303,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "IRR",
+        "Cur_Scale": 100000,
+        "Cur_Name": "\u0418\u0440\u0430\u043d\u0441\u043a\u0438\u0445 \u0440\u0438\u0430\u043b\u043e\u0432",
+        "Cur_OfficialRate": 5.0907
+    },
+    {
+        "Cur_ID": 294,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "ISK",
+        "Cur_Scale": 100,
+        "Cur_Name": "\u0418\u0441\u043b\u0430\u043d\u0434\u0441\u043a\u0438\u0445 \u043a\u0440\u043e\u043d",
+        "Cur_OfficialRate": 1.7698
+    },
+    {
+        "Cur_ID": 295,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "JPY",
+        "Cur_Scale": 100,
+        "Cur_Name": "\u0419\u0435\u043d",
+        "Cur_OfficialRate": 1.9197
+    },
+    {
+        "Cur_ID": 23,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "CAD",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u041a\u0430\u043d\u0430\u0434\u0441\u043a\u0438\u0439 \u0434\u043e\u043b\u043b\u0430\u0440",
+        "Cur_OfficialRate": 1.5957
+    },
+    {
+        "Cur_ID": 304,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "CNY",
+        "Cur_Scale": 10,
+        "Cur_Name": "\u041a\u0438\u0442\u0430\u0439\u0441\u043a\u0438\u0445 \u044e\u0430\u043d\u0435\u0439",
+        "Cur_OfficialRate": 3.1863
+    },
+    {
+        "Cur_ID": 72,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "KWD",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u041a\u0443\u0432\u0435\u0439\u0442\u0441\u043a\u0438\u0439 \u0434\u0438\u043d\u0430\u0440",
+        "Cur_OfficialRate": 7.0324
+    },
+    {
+        "Cur_ID": 296,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "MDL",
+        "Cur_Scale": 10,
+        "Cur_Name": "\u041c\u043e\u043b\u0434\u0430\u0432\u0441\u043a\u0438\u0445 \u043b\u0435\u0435\u0432",
+        "Cur_OfficialRate": 1.2496
+    },
+    {
+        "Cur_ID": 286,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "NZD",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u041d\u043e\u0432\u043e\u0437\u0435\u043b\u0430\u043d\u0434\u0441\u043a\u0438\u0439 \u0434\u043e\u043b\u043b\u0430\u0440",
+        "Cur_OfficialRate": 1.4639
+    },
+    {
+        "Cur_ID": 297,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "NOK",
+        "Cur_Scale": 10,
+        "Cur_Name": "\u041d\u043e\u0440\u0432\u0435\u0436\u0441\u043a\u0438\u0445 \u043a\u0440\u043e\u043d",
+        "Cur_OfficialRate": 2.4753
+    },
+    {
+        "Cur_ID": 298,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "RUB",
+        "Cur_Scale": 100,
+        "Cur_Name": "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0438\u0445 \u0440\u0443\u0431\u043b\u0435\u0439",
+        "Cur_OfficialRate": 3.2516
+    },
+    {
+        "Cur_ID": 299,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "XDR",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0421\u0414\u0420 (\u0421\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0430\u0432\u0430 \u0437\u0430\u0438\u043c\u0441\u0442\u0432\u043e\u0432\u0430\u043d\u0438\u044f)",
+        "Cur_OfficialRate": 2.9665
+    },
+    {
+        "Cur_ID": 119,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "SGD",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0421\u0438\u043d\u0433\u0430\u043f\u0443\u0440c\u043a\u0438\u0439 \u0434\u043e\u043b\u043b\u0430\u0440",
+        "Cur_OfficialRate": 1.5764
+    },
+    {
+        "Cur_ID": 300,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "KGS",
+        "Cur_Scale": 100,
+        "Cur_Name": "\u0421\u043e\u043c\u043e\u0432",
+        "Cur_OfficialRate": 3.0632
+    },
+    {
+        "Cur_ID": 301,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "KZT",
+        "Cur_Scale": 1000,
+        "Cur_Name": "\u0422\u0435\u043d\u0433\u0435",
+        "Cur_OfficialRate": 5.6537
+    },
+    {
+        "Cur_ID": 302,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "TRY",
+        "Cur_Scale": 10,
+        "Cur_Name": "\u0422\u0443\u0440\u0435\u0446\u043a\u0438\u0445 \u043b\u0438\u0440",
+        "Cur_OfficialRate": 3.9297
+    },
+    {
+        "Cur_ID": 143,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "GBP",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0424\u0443\u043d\u0442 \u0441\u0442\u0435\u0440\u043b\u0438\u043d\u0433\u043e\u0432",
+        "Cur_OfficialRate": 2.8236
+    },
+    {
+        "Cur_ID": 305,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "CZK",
+        "Cur_Scale": 100,
+        "Cur_Name": "\u0427\u0435\u0448\u0441\u043a\u0438\u0445 \u043a\u0440\u043e\u043d",
+        "Cur_OfficialRate": 9.3916
+    },
+    {
+        "Cur_ID": 306,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "SEK",
+        "Cur_Scale": 10,
+        "Cur_Name": "\u0428\u0432\u0435\u0434\u0441\u043a\u0438\u0445 \u043a\u0440\u043e\u043d",
+        "Cur_OfficialRate": 2.2782
+    },
+    {
+        "Cur_ID": 130,
+        "Date": "2019-03-13T00:00:00",
+        "Cur_Abbreviation": "CHF",
+        "Cur_Scale": 1,
+        "Cur_Name": "\u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0441\u043a\u0438\u0439 \u0444\u0440\u0430\u043d\u043a",
+        "Cur_OfficialRate": 2.1206
+    }
+]
